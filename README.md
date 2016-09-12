@@ -5,6 +5,7 @@ It is built using the great SearchKit framework (searchkit.co).
 
 ## Demo
 Data: http://data.iterativ.ch:9200
+
 Explorer: http://data.iterativ.ch/
 
 
