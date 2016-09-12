@@ -8,4 +8,13 @@ Small project to get started using searchkit. Webpack, es6 (es2015 babel)
 
 ## Webpack build
 
-*
+> webpack --config webpack.dev.config.js
+
+# Visit at:
+
+> http://data.iterativ.ch/
+
+# Elastic endpoint:
+
+> http://data.iterativ.ch:9200
+
