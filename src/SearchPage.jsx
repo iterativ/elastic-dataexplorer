@@ -28,7 +28,7 @@ const AlbumHitsGridItem = (props)=> {
     return (
       <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
         <a href={url} target="_blank">
-          <img data-qa="poster" className={bemBlocks.item("poster")} src={source.album_artist} width="170" height="240"/>
+          <img data-qa="poster" className={bemBlocks.item("poster")} src={source.cover_image} width="170" height="240"/>
           <div data-qa="title" className={bemBlocks.item("title")} dangerouslySetInnerHTML={{__html:source.album_title}}></div>
           <div data-qa="title" className={bemBlocks.item("title")} dangerouslySetInnerHTML={{__html:source.album_artist}}></div>
         </a>
@@ -50,7 +50,7 @@ export const AlbumHitsListItem = (props)=> {
     return (
         <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">
           <div className={bemBlocks.item("poster")}>
-              <img data-qa="poster" src={result._source.album_artist} width="170" height="170"/>
+              <img data-qa="poster" src={source.cover_image} width="170" height="170"/>
           </div>
           <div className={bemBlocks.item("details")}>
               <h3 className={bemBlocks.item("subtitle")}>{source.album_title}</h3>
