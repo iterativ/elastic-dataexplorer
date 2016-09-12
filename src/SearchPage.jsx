@@ -90,6 +90,12 @@ export class SearchPage extends React.Component {
                   showHistogram={true}
                   title="Track Count"/>
 							<MenuFilter
+								id="name"
+								title="Artist Name"
+								field="main_artist.name"
+								listComponent={ItemHistogramList}
+                size={10}/>
+							<MenuFilter
 								id="type"
 								title="Artist"
 								field="album_artist.raw"
