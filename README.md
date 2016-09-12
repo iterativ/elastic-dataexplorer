@@ -5,3 +5,7 @@ Small project to get started using searchkit. Webpack, es6 (es2015 babel)
 * npm install
 * npm start
 * visit http://localhost:3000
+
+## Webpack build
+
+*
