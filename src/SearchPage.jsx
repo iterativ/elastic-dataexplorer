@@ -72,7 +72,7 @@ export class SearchPage extends React.Component {
 		          autofocus={true}
 		          searchOnChange={true}
 							placeholder="Search albums..."
-		          prefixQueryFields={["album_title"]}/>
+		          prefixQueryFields={["album_title", "tracks.lyrics"]}/>
 		      </TopBar>
 		      <LayoutBody>
 		        <SideBar>
