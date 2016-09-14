@@ -21,7 +21,7 @@ const AlbumHitsGridItem = (props)=> {
 
   if (result) {
     const source:any = _.extend({}, result._source, result.highlight);
-    let url = "http://www.imdb.com/title/" + result._source.imdbId;
+    let url = "http://musicbrainz.org/release/" + source.gid;
 
     console.log(source);
 
@@ -55,6 +55,7 @@ export const AlbumHitsListItem = (props)=> {
           <div className={bemBlocks.item("details")}>
               <h3 className={bemBlocks.item("subtitle")}>{source.album_title}</h3>
               <div className={bemBlocks.item("text")}>Artist: {source.album_artist}</div>
+              <div className={bemBlocks.item("text")} dangerouslySetInnerHTML={{__html:source.tracks[0].lyrics}}></div>
           </div>
       </div>
     )
