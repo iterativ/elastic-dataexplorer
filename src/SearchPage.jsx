@@ -92,27 +92,22 @@ export class SearchPage extends React.Component {
 							<MenuFilter
 								id="name"
 								title="Artist Name"
-								field="main_artist.name"
+								field="main_artist.name.raw"
 								listComponent={ItemHistogramList}
                 size={10}/>
-							<MenuFilter
-								id="type"
-								title="Artist"
-								field="album_artist.raw"
-								listComponent={ItemHistogramList}
-                size={10}/>
+              <RefinementListFilter
+                id="lyrics"
+                title="Lyrics"
+                field="tracks.lyrics"
+                operator="AND"
+                listComponent={TagCloud}
+                size={25}/>
 							<MenuFilter
 								id="type"
 								title="Packaging"
 								field="packaging.raw"
 								listComponent={ItemHistogramList}
                 size={10}/>
-		          <RefinementListFilter
-		            id="actors"
-		            title="Actors"
-		            field="actors.raw"
-		            operator="AND"
-		            size={10}/>
 		        </SideBar>
 		        <LayoutResults>
 		          <ActionBar>
