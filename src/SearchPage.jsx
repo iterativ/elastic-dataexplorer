@@ -22,8 +22,8 @@ const AlbumHitsGridItem = (props)=> {
   const {bemBlocks, result} = props;
 
   if (result) {
-    const source:any = _.extend({}, result._source, result.highlight);
-    let url = "http://musicbrainz.org/release/" + source.gid;
+    const source = _.extend({}, result._source, result.highlight);
+    let url = "https://musicbrainz.org/release/" + source.gid;
 
     console.log(source);
 
@@ -43,8 +43,8 @@ export const AlbumHitsListItem = (props)=> {
   const {bemBlocks, result} = props;
 
   if (result) {
-    const source:any = _.extend({}, result._source, result.highlight);
-    let url = "http://www.imdb.com/title/" + result._source.imdbId;
+    const source = _.extend({}, result._source, result.highlight);
+    let url = "https://www.imdb.com/title/" + result._source.imdbId;
 
     console.log('JLHGLKJHLAKDJFHLKAJH');
     console.log(source);
