@@ -13,7 +13,9 @@ import {
 
 require("./index.scss");
 
-const host = "http://data.iterativ.ch:9200/albums";
+// const host = "http://data.iterativ.ch:9200/albums";
+//const host = "http://localhost:9200/albums";
+const host = "https://search-iterativ-3tne266mehlnpx4374mxttxonm.eu-central-1.es.amazonaws.com/albums";
 const searchkit = new SearchkitManager(host);
 
 const AlbumHitsGridItem = (props)=> {

@@ -17,4 +17,3 @@ Explorer: http://data.iterativ.ch/
 
 ## Webpack build
 > webpack --config webpack.dev.config.js
-
